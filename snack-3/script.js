@@ -12,6 +12,7 @@ while(nomi.length>0){
     cognomi.splice(temp, 1);
     invitati.push(persona);
     document.getElementById("risultato").innerHTML += "<li>" + persona + "</li>";
+    document.getElementsByTagName("li")[2-nomi.length].style.color = "rgb("+randomN(256)+","+randomN(256)+","+randomN(256)+")";
 }
 console.log(invitati);
 function randomN(number){
