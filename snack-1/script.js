@@ -28,8 +28,13 @@ for(var i=0; i<numberRequested && userInput!="exit"; i++){
     // }
 // }
 document.getElementById("risultato").innerHTML=sum;
-//function check if the input is onlynumbers
-function isNumber(temp){
+/**
+ * Given a string returns true if is composed only by numbers, false if there is some forbidden char, doesn't work with negative numbers
+ */
+ function isNumber(temp){
+    if(temp.length==0){
+        return false;
+    }
     for(let t=0; t<temp.length; t++){
         if(temp[t]!="0"&&temp[t]!="1"&&temp[t]!="2"&&temp[t]!="3"&&temp[t]!="4"&&temp[t]!="5"&&temp[t]!="6"&&temp[t]!="7"&&temp[t]!="8"&&temp[t]!="9"){
             return false;
