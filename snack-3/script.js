@@ -8,7 +8,6 @@ while(nomi.length>0){
     persona = nomi[temp];
     nomi.splice(temp, 1);
     temp = randomN(cognomi.length);
-    console.log(temp);
     persona +=" " + cognomi[temp];
     cognomi.splice(temp, 1);
     invitati.push(persona);
