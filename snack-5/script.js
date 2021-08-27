@@ -1,20 +1,35 @@
 //input
-var nomi = ["Gianni", "Mario", "Weejee"];
-var cognomi = ["Rossi","Bianchi","Ammaccabanane"];
-var invitati = [];
-var persona;
-while(nomi.length>0){
-    temp = randomN(nomi.length);
-    persona = nomi[temp];
-    nomi.splice(temp, 1);
-    temp = randomN(cognomi.length);
-    persona +=" " + cognomi[temp];
-    cognomi.splice(temp, 1);
-    invitati.push(persona);
-    document.getElementById("risultato").innerHTML += "<li>" + persona + "</li>";
-    document.getElementsByTagName("li")[2-nomi.length].style.color = "rgb("+randomN(256)+","+randomN(256)+","+randomN(256)+")";
+var array1=[];
+var array2=[];
+var lenght;
+length=randomN(30);
+for(var i=0; i<length; i++){
+    array1.push(randomN(256));
+    document.getElementById("array1").innerHTML+="<li>"+ array1[i] +"</li>";
 }
-console.log(invitati);
+length=randomN(30);
+for(var i=0; i<length; i++){
+    array2.push(randomN(256));
+    document.getElementById("array2").innerHTML+="<li>"+ array2[i] +"</li>";
+}
+//if 0 are equal, else if positive array1 is bigger, else array 2 is bigger
+lenght= array1.length-array2.length;
+if(lenght!=0){
+    let temp;
+    if(lenght>0){
+        temp=array2.length;
+        for(let i=temp; i<array1.length; i++){
+            array2.push(randomN(256));
+            document.getElementById("array2").innerHTML+="<li class=\"addedElement\">"+ array2[i] +"</li>";
+        }
+    }else{
+        temp=array1.length;
+        for(let i=temp; i<array2.length; i++){
+            array1.push(randomN(256));
+            document.getElementById("array1").innerHTML+="<li class=\"addedElement\">"+ array1[i] +"</li>";
+        }
+    }
+}
 /**
  * return a number from 0 to "number"
  */

@@ -1,0 +1,12 @@
+.flex{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    align-items: flex-start;
+}
+.addedElement{
+    color: green;
+    background-color: rgba(255, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 2px 2px white;
+}
