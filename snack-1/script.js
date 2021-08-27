@@ -16,10 +16,9 @@ for(var i=0; i<5; i++){
 //     userInput=parseInt(prompt("Insert the "+ (i+1) +" number:"));
 //     if(isNaN(userInput)){
 //         alert("you insered the wrong number! Try again");
-//         i--;
 //     }else{
 //         sum +=userInput;
+//         i++;
 //     }
-//     i++;
 // }
 document.getElementById("risultato").innerHTML=sum;
