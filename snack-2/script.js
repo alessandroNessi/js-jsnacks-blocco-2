@@ -1,4 +1,4 @@
-//for
+//input
 var userInput=prompt("inserisci il numero: ");
 while(isNumber(userInput)==false){
     userInput=prompt("Non hai inserito un numero, inserisci un numero: ");
@@ -8,6 +8,7 @@ if(userInput%2==1){
     userInput+=1;
 }
 document.getElementById("risultato").innerHTML=userInput;
+
 //function check if the input is onlynumbers
 function isNumber(temp){
     for(let t=0; t<temp.length; t++){
