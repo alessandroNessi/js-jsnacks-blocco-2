@@ -22,4 +22,4 @@ for(var i=0; i<5; i++){
 //     }
 //     i++;
 // }
-console.log(sum);
+document.getElementById("risultato").innerHTML=sum;
