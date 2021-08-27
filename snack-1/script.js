@@ -23,14 +23,14 @@ for(var i=0; i<numberRequested && userInput!="exit"; i++){
 // while(i<numberRequested && userInput!="exit"){
     // userInput=prompt("Insert the "+ (i+1) +" number:");
     // if(userInput!="exit"){
-    //     userInput=parseInt(userInput);
-    //     if(isNaN(userInput)){
-    //         alert("you insered the wrong number! Try again");
-    //     }else{
+    //     if(isNumber(userInput)){
+    //         userInput=parseInt(userInput);
     //         sum +=userInput;
     //         i++;
+    //     }else{
+    //         alert("you insered the wrong number! Try again");
     //     }
-    // }     
+    // }
 // }
 document.getElementById("risultato").innerHTML=sum;
 function isNumber(temp){
