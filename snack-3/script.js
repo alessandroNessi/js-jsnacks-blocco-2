@@ -11,6 +11,7 @@ while(nomi.length>0){
     persona +=" " + cognomi[temp];
     cognomi.splice(temp, 1);
     invitati.push(persona);
+    document.getElementById("risultato").innerHTML += "<li>" + persona + "</li>";
 }
 console.log(invitati);
 function randomN(number){
